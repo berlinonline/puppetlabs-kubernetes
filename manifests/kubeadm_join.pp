@@ -10,7 +10,6 @@ Optional[String] $discovery_token        = undef,
 Optional[Array] $env                     = undef,
 Optional[String] $feature_gates          = undef,
 Optional[Array] $ignore_preflight_errors = undef,
-Optional[String] $node_name              = undef,
 Optional[Array] $path                    = undef,
 Boolean $skip_ca_verification            = false,
 Optional[String] $tls_bootstrap_token    = undef,
@@ -27,7 +26,7 @@ Optional[String] $token                  = undef
     skip_ca_verification     => $skip_ca_verification,
     feature_gates            => $feature_gates,
     ignore_preflight_errors  => $ignore_preflight_errors,
-    node_name                => $node_name,
+    node_name                => $node_label,
     tls_bootstrap_token      => $tls_bootstrap_token,
     token                    => $token
   })
